@@ -1,5 +1,6 @@
 #include <iostream>
 
+//To find the minimum length of subarray that exists such that sum(subarray) >= required
 int find_minlength(int* arr, const int N, int reqiured);
 
 int main()
