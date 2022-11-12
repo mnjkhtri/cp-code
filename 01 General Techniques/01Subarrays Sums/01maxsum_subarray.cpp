@@ -88,4 +88,8 @@ int kadanes(int* arr, int N)
     return best;
 }
 
+/*
+Idea:
+Increase the subarray space and if it violates the condition then decrease its area
+*/
 
