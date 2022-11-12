@@ -17,7 +17,9 @@ int main()
 //O(N^3)
 int naive(int* arr, int N)
 {
-    int best = 0;
+    //int best = 0;
+    int best = INT_MIN;
+
     for (int i = 0; i < N; ++i)
     {
         for (int j = 0; j < N; ++j)
