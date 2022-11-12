@@ -12,7 +12,7 @@ int main()
 }
 
 //In kadane's left index was updated implicitly, here we need an explicit pointer
-//As the right index moves, update the sum and based on it's value update the left pointer
+//As the right index moves, update the sum and based on it's value update the left pointer (and the best answer)
 int find_minlength(int* arr, const int N, int required)
 {
     int left = 0;   //the explicit left pointer
@@ -22,7 +22,7 @@ int find_minlength(int* arr, const int N, int required)
     for (int j = 0; j < N; ++j)
     {
         current_sum += arr[j];
-        //Given the current sum we update the left pointer as:
+        //Given the current sum we update the left pointer as long as the condition matches
         while (current_sum >= required)
         {
             minlength = std::min(minlength, j-left+1);
