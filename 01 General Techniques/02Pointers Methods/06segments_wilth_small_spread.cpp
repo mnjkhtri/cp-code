@@ -34,7 +34,8 @@ void solve()
         //if in bad zone then increase the left to relief
         while (*muls.rbegin()-*muls.begin() > k)
         {
-            muls.erase(arr[left]);
+            //need to use find here mustly
+            muls.erase(muls.find(arr[left]));
             left++;
         }
 
