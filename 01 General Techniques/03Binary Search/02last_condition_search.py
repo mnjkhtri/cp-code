@@ -1,6 +1,4 @@
 #the key to understanding binary search is to implement the True-false way
-#let a function on an array gives some Trues followed by the Falses, then binary search is used to return the index of the last true element
-
 #the function should implement at least one True else the search will return the first index itself
 #also at least one false so the loop does not run forever
 #so True .... False
