@@ -6,7 +6,7 @@
 
 
 //Codeforecs ITMO university course:
-//Two pointers, step 2, F
+//Two pointers, step 2, E 
 void solve()
 {
     int n, k;
