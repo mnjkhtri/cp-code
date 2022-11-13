@@ -22,11 +22,7 @@ std::pair<int,int> find_pairs(int* arr, int N, int required)
 {
     //Need to sort first
     std::sort(arr, arr+N);    
-    for (int i = 0; i < N; ++i)
-    {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << std::endl;
+
     //left and right pointers
     int left = 0;
     int right = N-1;

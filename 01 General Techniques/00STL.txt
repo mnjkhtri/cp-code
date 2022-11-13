@@ -9,7 +9,8 @@
     Function members:
     v[n]: access the n index element        
     begin(): iterator to the first element
-    end(): iterator to the last element
+    end(): iterator to the element that follows the last element
+    rbegin(): iterator to the last element (reverse iterator)
     size(): number of elements in the vector
     push_back(val): push the element into vector from the back 
     pop_back(): remove elements from the back of the vector
@@ -64,7 +65,7 @@
     size()
     erase(key); removes the key and its element
 
-5. Set:
+5. Set and multiset
     std::set<T> s;
     std::set<T, std::greater<T>> s;
 
@@ -75,10 +76,10 @@
     end()
     size()
     insert(val); inserts the val into the set; if already then no effect
-    erase(val); removes the val element from the set
+    find(val); returns iterator to the value in the set; if not found iterator to fake lastest elemetn
+    erase(itr); removes the element pointed by val 
 
-6. Multiset:
-    same
+    tip: use erase(find(val)) for easiness
 
 
 
