@@ -1,0 +1,87 @@
+1. Vectors:
+    std::vector<T type> v; empty vector
+    std::vector<T type> v(n); vector of size n each initialized to zero
+    std::vector<T type> v(n, val); vector of size n each initialized to val
+
+    Data members:
+
+
+    Function members:
+    v[n]: access the n index element        
+    begin(): iterator to the first element
+    end(): iterator to the last element
+    size(): number of elements in the vector
+    push_back(val): push the element into vector from the back 
+    pop_back(): remove elements from the back of the vector
+
+    Support:
+    std::sort(v.begin(), v.end())
+
+2. String:
+    string s;
+    string s = "val";
+
+    Data members:
+
+    Function members:
+    s[n]
+    begin()
+    end()
+    size()
+    push_back()
+    pop_back()
+
+    Support:
+    std::sort(s.begin(), s.end())
+    =; assignment
+    cin
+    cout 
+    +, +=; concatenation
+
+
+3. Pairs:
+    std::pair<T1, T2> p;
+    std::pair<T1, T2> p(val, val);
+
+    Data members:
+    p.first
+    p.second
+
+    Function members:
+
+    Support:
+    std::make_pair(val, val); returns pair of the given val types
+
+4. Map:
+    std::map<T1, T2> m;
+
+    Data members:
+
+    Function members:
+    m[key]; inserts that key and initializes its value to 0 
+    begin()
+    end()
+    size()
+    erase(key); removes the key and its element
+
+5. Set:
+    std::set<T> s;
+    std::set<T, std::greater<T>> s;
+
+    Data members:
+
+    Function members:
+    begin()
+    end()
+    size()
+    insert(val); inserts the val into the set; if already then no effect
+    erase(val); removes the val element from the set
+
+6. Multiset:
+    same
+
+
+
+
+
+
