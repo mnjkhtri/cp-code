@@ -1,4 +1,4 @@
-Pointers method: Efficient navigation of arrays
+Pointers method: Efficient navigation of arrays (essentially a counting problem that counts the number of good (i,j) pair in the array)
 
 1. One array:
     -The array must have a boolean 'goodness_property' that says yes or no well-defined as a function of two indexes
