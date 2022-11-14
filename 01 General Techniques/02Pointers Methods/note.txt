@@ -68,3 +68,8 @@ Pointers method: Efficient navigation of arrays (essentially a counting problem 
 
     Some different cases:
         in some cases it could be that which pointer to change is not fixed before but depends on inside the loop; this happens when we are in goodness region whole time; and need to find best of them 
+
+
+TYPICAL PROBLEMS:
+    -Something involving pair of elements in an array
+    -Something to do with subsegmenet of the array
