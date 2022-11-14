@@ -30,5 +30,5 @@ int binary_search(int* arr, int N)
 //Actually search can be performed even without concern to any N, meaning that searching space could be infinite
     /*
     Infinite space: should be at least one false so the loop does not go forever; gap = some value which puts into false region
-    Finite space: limits as while (condition and current+gap < N) current += gap; gap could be simply half of that space length
+    Finite space: limits as while (current+gap < N; order matters) current += gap; gap could be simply half of that space length
     */
