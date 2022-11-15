@@ -42,4 +42,4 @@ int main()
     std::cout << prefixQuery(prefixSum, 1,6) << std::endl;
 }
 
-//The addition operation can be generalized to any associative operator 
+//The addition operation can be generalized to any associative operator
