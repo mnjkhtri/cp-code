@@ -14,6 +14,7 @@
     size(): number of elements in the vector
     push_back(val): push the element into vector from the back 
     pop_back(): remove elements from the back of the vector
+    insert(itr, val); inserts the value at the post of itr
 
     Support:
     std::sort(v.begin(), v.end())
