@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 
+//Prefix sums for xors
 int main()
 {
     std::ios::sync_with_stdio(0);
