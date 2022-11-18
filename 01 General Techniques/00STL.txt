@@ -2,7 +2,7 @@
     std::vector<T type> v; empty vector
     std::vector<T type> v(n); vector of size n each initialized to zero
     std::vector<T type> v(n, val); vector of size n each initialized to val
-
+    std::vector<T type> v({...})
     Data members:
 
 
@@ -69,7 +69,8 @@
 
 5. Set and multiset
     std::set<T> s;
-    std::set<T, std::greater<T>> s;
+    std::set<T, std::greater<T>> s; in non increasing order
+    std::set<T> s(intrbegin, intrend); makes set of values from itrbegin to itrend
 
     Data members:
 
@@ -79,7 +80,8 @@
     size()
     insert(val); inserts the val into the set; if already then no effect
     find(val); returns iterator to the value in the set; if not found iterator to fake lastest elemetn
-    erase(itr); removes the element pointed by val 
+    erase(itr); removes the element pointed by val, if invalid itr then probably no effect 
+    upper_bound(val); returns iterator to immediate next element just greater than k, if exceeds the maximum then std::end()
 
     tip: use erase(find(val)) for easiness
 
