@@ -52,16 +52,16 @@ void solve()
     }
     //search space is time
 
-    if(no_of_balloons == 0)
-    {
-        std::cout << 0 << std::endl;
-        for(int i=0; i<no_of_assistants; i++) {
-            std::cout << "0 ";
-        }
-        return;
-    }
+    // if(no_of_balloons == 0)
+    // {
+    //     std::cout << 0 << std::endl;
+    //     for(int i=0; i<no_of_assistants; i++) {
+    //         std::cout << "0 ";
+    //     }
+    //     return;
+    // }
 
-    long long left = 0;
+    long long left = -1; //cant be one because no of balloons could be zero
     long long right = INT_MAX;
     while (left+1 < right)
     {
