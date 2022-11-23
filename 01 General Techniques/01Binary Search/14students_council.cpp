@@ -10,6 +10,9 @@
 #include <iomanip>
 #include <limits>
 
+//https://codeforces.com/edu/course/2/lesson/6/2/practice/contest/283932/problem/G
+//ITMO course codefroces, binary search problem 2G
+
 #define int long long
 
 int council_size;
