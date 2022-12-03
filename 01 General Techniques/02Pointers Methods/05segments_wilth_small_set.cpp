@@ -4,7 +4,6 @@
 #include <string>
 #include <map>
 
-
 //Codeforecs ITMO university course:
 //Two pointers, step 2, E 
 void solve()
