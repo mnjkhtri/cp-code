@@ -3,15 +3,18 @@
     std::vector<T type> v(n); vector of size n each initialized to zero
     std::vector<T type> v(n, val); vector of size n each initialized to val
     std::vector<T type> v({...})
+    
     Data members:
-
+    ...
 
     Function members:
     v[n]: access the n index element        
     begin(): iterator to the first element
     end(): iterator to the element that follows the last element
     rbegin(): iterator to the last element (reverse iterator)
+    
     size(): number of elements in the vector
+    
     push_back(val): push the element into vector from the back 
     pop_back(): remove elements from the back of the vector
     insert(itr, val); inserts the value at the post of itr
@@ -20,27 +23,18 @@
     std::sort(v.begin(), v.end())
 
 2. String:
-    string s;
-    string s = "val";
 
-    Data members:
-
-    Function members:
-    s[n]
-    begin()
-    end()
-    size()
-    push_back()
-    pop_back()
-    substr(itr, length); return string from pos itr of length len
-
-    Support:
-    std::sort(s.begin(), s.end())
-    =; assignment
+	<same as a vector>
+	
+    Extra support:
+    
+    +, +=; concatenation
+    >, ==, <; alphabetical comparison
     cin
     cout 
-    +, +=; concatenation
-
+    
+    reversing a string: std::reverse(s.begin(), s.end())
+    uppercasg a string: std::transform(s.begin(), s.end, s.begin(), ::toupper)
 
 3. Pairs:
     std::pair<T1, T2> p;
@@ -51,40 +45,97 @@
     p.second
 
     Function members:
+    ...
 
     Support:
     std::make_pair(val, val); returns pair of the given val types
 
-4. Map:
-    std::map<T1, T2> m;
+------------------------------------------------------------------------------------------------------
 
-    Data members:
+HASH MAPS:
 
-    Function members:
-    m[key]; inserts that key and initializes its value to 0 
-    begin()
-    end()
-    size()
-    erase(key); removes the key and its element
-
-5. Set and multiset
+4. Set (unordered i guess)
     std::set<T> s;
-    std::set<T, std::greater<T>> s; in non increasing order
     std::set<T> s(intrbegin, intrend); makes set of values from itrbegin to itrend
 
     Data members:
+    ...
 
     Function members:
     begin()
     end()
     size()
+    
     insert(val); inserts the val into the set; if already then no effect
-    find(val); returns iterator to the value in the set; if not found iterator to fake lastest elemetn
+    find(val); returns iterator to the value in the set; if not found iterator to fake lastest ele
     erase(itr); removes the element pointed by val, if invalid itr then probably no effect 
-    upper_bound(val); returns iterator to immediate next element just greater than k, if exceeds the maximum then std::end()
+    
+    count() is also there
+    
+    ==; for equality comparison
+    can iterate with auto
+    
+    Uses:
+    -Finding distinct elements: inserting elements into a set enforces uniqueness
+    -Efficient duplicate detection
+    
+    
+    NOTE: Better than multiset are maps
 
-    tip: use erase(find(val)) for easiness
 
+HASH MAPS
+
+5. Map:
+    std::map<T1, T2> m;
+
+    Data members:
+    ...
+
+    Function members:amanaplanacanalpanama"
+    [] is the key to success
+    begin()
+    end()
+    size()
+    insert({key, value}); inserts that key and initializes its value to 0 or the empty version;
+    find(val); returns iterator i guess the same way
+    erase(key); removes the key and its element
+    
+    count() is also there
+    
+    ==; for eqaulity comparison
+    can iterate with auto
+    
+    Uses:
+    -Bucketing problem where you make different objects
+    
+    
+    
+6. Priority_queue:
+	...
+	
+	priority_queue::push(): inserts
+	priority_queue::top(): views
+	priority_queue::pop(): deletes the smallest element
+	
+	
+
+Leetcodes:
+
+1. For kind of bucketing and sorting problems when order does not matter: use set, hash map, and sorting ofc
+
+	Classicals: 
+	
+	>2 sum: iterate over i : 0 to second last, iterate over j : i+1 to last : but hashify the second iteration
+	
+	>3 sum: iterate over i : 0 to third last, iterate over j: i+1 to second last ; iterate k from j+1 to last, only hashify the last one
+	>unique chaiyo bhane chai sort the array, and store value:last_index in a map then update it
+	(yesari +1 dekhi iterate garda unique combination banni bhayo, think about cutting square diagonally)
+	
+
+2. Two pointers:
+	-
+
+3. Static range queries: n+1 sized cumulative, then cum[right]-cum[left] is [left, right)
 
 
 
